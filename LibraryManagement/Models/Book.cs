@@ -1,24 +1,44 @@
-using System.Linq;
+// using System.Linq;
+
+// namespace LibraryManagement.Models;
+
+// public class Book
+// {
+//     public string Isbn { get; init; }
+//     public string Title { get; init; }
+//     public string Author { get; init; }
+//     public List<BookCopy> Copies { get; private set; } = new();
+
+//     public Book(string isbn, string title, string author, int initialCopies)
+//     {
+//         Isbn = isbn;
+//         Title = title;
+//         Author = author;
+
+//         for (int i = 1; i <= initialCopies; i++)
+//             Copies.Add(new BookCopy(i));
+//     }
+
+//     public BookCopy? GetAvailableCopy() => Copies.FirstOrDefault(c => c.IsAvailable());
+//     public int AvailableCount() => Copies.Count(c => c.IsAvailable());
+// }
+
+
+
+using System.Reflection;
 
 namespace LibraryManagement.Models;
 
-public class Book
+public class Books
 {
-    public string Isbn { get; init; }
-    public string Title { get; init; }
-    public string Author { get; init; }
-    public List<BookCopy> Copies { get; private set; } = new();
+    public string Isbn { get; set ; } 
+    public string auther { get ; private set ; }
 
-    public Book(string isbn, string title, string author, int initialCopies)
+    public
+    public Books ( string _isbn, string _auth )
     {
-        Isbn = isbn;
-        Title = title;
-        Author = author;
-
-        for (int i = 1; i <= initialCopies; i++)
-            Copies.Add(new BookCopy(i));
+        
     }
+    public bool isalive () => 
 
-    public BookCopy? GetAvailableCopy() => Copies.FirstOrDefault(c => c.IsAvailable());
-    public int AvailableCount() => Copies.Count(c => c.IsAvailable());
 }

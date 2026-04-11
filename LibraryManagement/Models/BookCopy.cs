@@ -14,3 +14,4 @@ public class BookCopy
     public void Return() => Status = CopyStatus.Available;
     public void PutOnHold() => Status = CopyStatus.OnHold;
 }
+
